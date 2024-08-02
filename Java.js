@@ -1,4 +1,3 @@
-// Common JavaScript functionality for all pages
 document.addEventListener('DOMContentLoaded', function () {
     // Basic form validation
     const contactForm = document.querySelector('form');
@@ -24,4 +23,17 @@ document.addEventListener('DOMContentLoaded', function () {
         const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         return re.test(String(email).toLowerCase());
     }
+
+    // Slider functionality
+    const sliders = document.querySelectorAll('.slider');
+    sliders.forEach(slider => {
+        let currentIndex = 0;
+        const slides = slider.querySelector('.slides');
+        const totalSlides = slides.children.length;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`; // Fixed syntax error
+        }, 3000);
+    });
 });

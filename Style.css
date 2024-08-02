@@ -8,19 +8,21 @@ body {
 }
 
 header {
-    background: #4CAF50;
+    background: #7680f4;
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    height: 100px;
 }
 
 header h1 {
-    margin: 0;
+    margin-right: 800px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -36,11 +38,12 @@ nav ul li a {
 
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background: #fff;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 120%; /* You can adjust the max-width as needed */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    background: #fff;
 }
 
 section {
@@ -48,14 +51,14 @@ section {
 }
 
 h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
+    color: #7680f4;
+    border-bottom: 2px solid #7680f4;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
 h3 {
-    color: #4CAF50;
+    color: #7680f4;
 }
 
 /* Form styles */
@@ -80,12 +83,12 @@ h3 {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #4CAF50;
+    border-color: #7680f4;
     outline: none;
 }
 
 button[type="submit"] {
-    background: #4CAF50;
+    background: #7680f4;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -97,11 +100,11 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #45a049;
+    background: #7680f4;
 }
 
 footer {
-    background: #4CAF50;
+    background: #7680f4;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -109,4 +112,110 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 20px;
+}
+
+.logo {
+    height: 90px;
+    width: 100px;
+    margin-right: 1150px;
+    margin-top: 10px;
+}
+
+.logo-container {
+    height: 10px;
+}
+
+ul {
+    margin-top: 50%;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.10s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+.gallery-item{ height: 200px;width: 200px;}
+
+
+h1{ font-size: 1.6em}
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Space between images */
+    padding: 10px;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the allocated space */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+footer {
+    background: #7680f4;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icon img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.social-icon.facebook img {
+    background-color: #3b5998; /* Facebook color */
+    border-radius: 50%;
+}
+
+.social-icon.instagram img {
+    background-color: #e4405f; /* Instagram color */
+    border-radius: 50%;
+}
+
+.social-icon.twitter img {
+    background-color: #1da1f2; /* Twitter color */
+    border-radius: 50%;
 }
