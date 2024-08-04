@@ -34,6 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
         setInterval(() => {
             currentIndex = (currentIndex + 1) % totalSlides;
             slides.style.transform = `translateX(-${currentIndex * 100}%)`; // Fixed syntax error
-        }, 3000);
+        }, 4000);
     });
 });
