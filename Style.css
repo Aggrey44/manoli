@@ -79,6 +79,15 @@ main {
     background: #fff;
 }
 
+#about h2 {
+    margin-bottom: 1%;
+}
+.about-main {
+    height: 100vh;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
 section {
     padding-top: 15%;
 }
@@ -203,7 +212,7 @@ footer {
     text-align: center;
     padding: 1em 0;
     position: relative;
-    bottom: 0;
+    bottom: -120;
     width: 100%;
     margin-top: 20px;
 }
@@ -243,6 +252,14 @@ footer {
 }
 
 /* Media Queries for responsive design */
+
+/* phones  */
+
+@media  (width < 730px) {
+    .img-fluid {
+        width: 100%;
+    }
+}
 
 /* Tablets and larger screens */
 @media (min-width: 600px) {
